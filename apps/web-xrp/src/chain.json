@@ -228,9 +228,9 @@
         }
       },
       "endpoints": {
-        "graphql": "http://localhost:8080/v1/graphql",
-        "graphqlWebsocket": "ws://localhost:8080/v1/graphql",
-        "publicRpcWebsocket": "ws://168.119.63.112:26657/websocket"
+        "graphql": "https://cosmos-explorer-evm-sidechain.peersyst.tech/v1/graphql",
+        "graphqlWebsocket": "wss://cosmos-explorer-evm-sidechain.peersyst.tech/v1/graphql",
+        "publicRpcWebsocket": "wss://tm-ws-evm-poa-sidechain.peersyst.tech/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",
