@@ -30,18 +30,17 @@ const Layout = (props: LayoutProps) => {
       transition={transition}
       className={classes.root}
     >
-      <XrpBaseLayout>
-        <div className={classes.contentWrapper}>
-          <Nav title={navTitle} />
-          <div className={classes.children}>
-            <div className={classes.appBarPlaceholder} />
-            {!!bannerLinks.length && <Banner />}
-            <div className={classes.pageLayout}>
-              <div className={cx(className, 'main-content')}>{children}</div>
-            </div>
+      <div className={classes.contentWrapper}>
+        <Nav title={navTitle} />
+        <div className={classes.children}>
+          <div className={classes.appBarPlaceholder} />
+          {!!bannerLinks.length && <Banner />}
+          <div className={classes.pageLayout}>
+            <div className={cx(className, 'main-content')}>{children}</div>
           </div>
         </div>
-      </XrpBaseLayout>
+      </div>
+
       {/* <Footer className={classes.footer} /> */}
     </motion.div>
   );
