@@ -8,6 +8,10 @@ const useStyles = makeStyles()((theme) => ({
       flexDirection: 'column',
       minHeight: '100vh',
     },
+    backgroundImage: 'url(/images/background.png)',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
   },
   contentWrapper: {
     [theme.breakpoints.up('lg')]: {
@@ -32,6 +36,15 @@ const useStyles = makeStyles()((theme) => ({
       width: '100%',
       flex: 1,
     },
+  },
+  pageLayout: {
+    [theme.breakpoints.up('xl')]: {
+      width: '80%',
+    },
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '0 auto',
+    width: '100%',
   },
 }));
 

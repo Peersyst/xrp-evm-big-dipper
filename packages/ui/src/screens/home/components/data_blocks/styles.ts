@@ -13,6 +13,10 @@ const useStyles = makeStyles()((theme) => ({
       gridTemplateColumns: 'repeat(4, 1fr)',
     },
   },
+  block: {
+    background: theme.palette.custom.block.background,
+    borderRadius: theme.shape.borderRadius + 10,
+  },
   blockHeight: {
     background: theme.palette.custom.primaryData.one,
   },

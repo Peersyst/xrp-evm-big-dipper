@@ -2,6 +2,7 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => ({
   root: {
+    background: '#232325',
     display: 'flex',
     flexDirection: 'column',
     '& .button': {
@@ -9,6 +10,10 @@ const useStyles = makeStyles()((theme) => ({
       '&:hover': {
         cursor: 'pointer',
       },
+    },
+    ' & .MuiTypography-h2': {
+      fontSize: '1.5rem',
+      fontWeight: 600,
     },
   },
   label: {
@@ -22,6 +27,14 @@ const useStyles = makeStyles()((theme) => ({
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
+    border: `1px solid ${theme.palette.primary.main}`,
+  },
+  seeMoreButton: {
+    color: theme.palette.primary.main,
+    padding: theme.spacing(1, 2),
+    border: `2px solid ${theme.palette.primary.main}`,
+    borderRadius: theme.shape.borderRadius + 8,
+    fontWeight: 600,
   },
 }));
 

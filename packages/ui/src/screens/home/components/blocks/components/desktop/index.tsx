@@ -16,6 +16,7 @@ import useAppTranslation from '@/hooks/useAppTranslation';
 import Link from 'next/link';
 import numeral from 'numeral';
 import { FC } from 'react';
+import BlockCard from '@/xrp-components/components/block-card';
 
 type BlockRowProps = {
   item: ItemType;
@@ -99,24 +100,11 @@ const Desktop: FC<DesktopProps> = ({ className, items }) => {
 
   return (
     <div className={cx(classes.root, className)}>
-      <Table className={classes.table}>
-        <TableHead>
-          <TableRow>
-            {columns.map((column) => (
-              <TableCell key={column.key} align={column.align}>
-                {t(column.key)}
-              </TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
-        <TableBody>
-          <AnimatePresence initial={false}>
-            {items.map((row) => (
-              <BlockRow key={row.hash} item={row} />
-            ))}
-          </AnimatePresence>
-        </TableBody>
-      </Table>
+      <AnimatePresence initial={false}>
+        {items.map((row) => (
+          <BlockCard key={row.hash} item={row} />
+        ))}
+      </AnimatePresence>
     </div>
   );
 };

@@ -1,6 +1,6 @@
 {
   "chainName": "base",
-  "title": "Desmos Block Explorer",
+  "title": "XRP EVM Block Explorer",
   "extra": {
     "profile": true,
     "graphqlWs": false
@@ -16,11 +16,11 @@
     ],
     "dark": {
       "primary": {
-        "main": "#FF835B",
+        "main": "#B480FF",
         "contrastText": "#FFFFFF"
       },
       "background": {
-        "default": "#000000",
+        "default": "#111112",
         "paper": "#131316"
       },
       "divider": "#282828",
@@ -29,6 +29,14 @@
         "secondary": "#C4C4C4"
       },
       "custom": {
+        "block": {
+          "background": "#232325"
+        },
+        "blockCard": {
+          "border": 5,
+          "borderColor": "#B480FF",
+          "background": "#232325"
+        },
         "general": {
           "background": "#000000",
           "surfaceOne": "#131316",
@@ -111,7 +119,7 @@
     },
     "light": {
       "primary": {
-        "main": "#FF835B",
+        "main": "#B480FF",
         "contrastText": "#FFFFFF"
       },
       "background": {
@@ -124,6 +132,14 @@
         "secondary": "#414141"
       },
       "custom": {
+        "block": {
+          "background": "#232325"
+        },
+        "blockCard": {
+          "border": 5,
+          "borderColor": "#B480FF",
+          "background": "#232325"
+        },
         "general": {
           "background": "#F8F8F8",
           "surfaceOne": "#FFFFFF",
@@ -228,9 +244,9 @@
         }
       },
       "endpoints": {
-        "graphql": "http://localhost:8080/v1/graphql",
-        "graphqlWebsocket": "ws://localhost:8080/v1/graphql",
-        "publicRpcWebsocket": "ws://168.119.63.112:26657/websocket"
+        "graphql": "https://cosmos-explorer-evm-sidechain.peersyst.tech/v1/graphql",
+        "graphqlWebsocket": "wss://cosmos-explorer-evm-sidechain.peersyst.tech/v1/graphql",
+        "publicRpcWebsocket": "wss://tm-ws-evm-poa-sidechain.peersyst.tech/websocket"
       },
       "marketing": {
         "matomoURL": "https://analytics.bigdipper.live",

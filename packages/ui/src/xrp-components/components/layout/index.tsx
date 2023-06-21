@@ -3,6 +3,7 @@ import Banner, { getBannersLinks } from '@/components/banner';
 import useStyles from '@/components/layout/styles';
 import type { LayoutProps } from '@/components/layout/types';
 import Nav from '@/components/nav';
+import XrpBaseLayout from '../xrp-base-layout';
 
 const bannerLinks = getBannersLinks();
 
@@ -29,14 +30,18 @@ const Layout = (props: LayoutProps) => {
       transition={transition}
       className={classes.root}
     >
-      <div className={classes.contentWrapper}>
-        <Nav title={navTitle} />
-        <div className={classes.children}>
-          <div className={classes.appBarPlaceholder} />
-          {!!bannerLinks.length && <Banner />}
-          <div className={cx(className, 'main-content')}>{children}</div>
+      <XrpBaseLayout>
+        <div className={classes.contentWrapper}>
+          <Nav title={navTitle} />
+          <div className={classes.children}>
+            <div className={classes.appBarPlaceholder} />
+            {!!bannerLinks.length && <Banner />}
+            <div className={classes.pageLayout}>
+              <div className={cx(className, 'main-content')}>{children}</div>
+            </div>
+          </div>
         </div>
-      </div>
+      </XrpBaseLayout>
       {/* <Footer className={classes.footer} /> */}
     </motion.div>
   );

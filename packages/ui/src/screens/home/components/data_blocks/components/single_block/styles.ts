@@ -9,10 +9,14 @@ const useStyles = makeStyles()((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     color: theme.palette.custom.fonts.fontFive,
+    '& .MuiTypography-h1': {
+      fontWeight: 600,
+    },
     '& .label': {
-      marginBottom: theme.spacing(2),
+      color: '#a2a2a4',
+      fontSize: '1rem',
     },
     '& .content': {
       width: '100%',
@@ -22,6 +26,7 @@ const useStyles = makeStyles()((theme) => ({
     },
     '& .description': {
       display: 'none',
+
       [theme.breakpoints.up('md')]: {
         display: 'block',
       },
