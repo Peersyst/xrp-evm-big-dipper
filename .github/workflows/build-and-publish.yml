@@ -31,7 +31,7 @@ jobs:
                     build-args: |
                         PROJECT_NAME=web-xrp
                         NEXT_PUBLIC_CHAIN_TYPE=mainnet
-                        NEXT_PUBLIC_RPC_WEBSOCKET=ws://168.119.63.112:26657/websocket
+                        NEXT_PUBLIC_RPC_WEBSOCKET=wss://tm-ws-evm-poa-sidechain.peersyst.tech/websocket
                         NEXT_PUBLIC_GRAPHQL_URL=https://cosmos-explorer-evm-sidechain.peersyst.tech/v1/graphql
                         NEXT_PUBLIC_GRAPHQL_WS=wss://cosmos-explorer-evm-sidechain.peersyst.tech/v1/graphql
                     tags: ${{ secrets.DOCKER_USERNAME }}/${{ github.event.repository.name }}:latest
