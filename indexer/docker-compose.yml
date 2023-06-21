@@ -18,6 +18,7 @@ services:
             - ./hasura-metadata/metadata:/hasura-metadata
 
     bdjuno:
+        platform: linux/amd64
         image: forbole/bdjuno:chains_evmos_mainnet-v3.2.0-74-g4ce0cc5
         restart: always
         command: /bin/sh /script/init.sh
