@@ -50,6 +50,8 @@ import bgTop from 'shared-utils/assets/images/bg-top.png?url';
 import bgBottom from 'shared-utils/assets/images/bg-bottom.png?url';
 import xrplLogo from 'shared-utils/assets/images/xrpl_logo.svg?url';
 import xrplLogoDark from 'shared-utils/assets/images/xrpl_logo_dark.svg?url';
+import xrplIcon from 'shared-utils/assets/images/xrpl_icon.svg?url';
+import xrplIconDark from 'shared-utils/assets/images/xrpl_icon_dark.svg?url';
 import bitsongLogoDark from 'shared-utils/assets/logos/bitsong-dark.svg?url';
 import comdexLogoDark from 'shared-utils/assets/logos/comdex-dark.svg?url';
 import cosmosLogoDark from 'shared-utils/assets/logos/cosmos-dark.svg?url';
@@ -287,6 +289,9 @@ const ChainIcon = ({
       break;
     case 'xrpl':
       [iconDark, iconLight] = [xrplLogo, xrplLogoDark];
+      break;
+    case 'xrplIcon':
+      [iconDark, iconLight] = [xrplIcon, xrplIconDark];
       break;
     default:
       throw new Error(`chain ${chainName} not supported`);

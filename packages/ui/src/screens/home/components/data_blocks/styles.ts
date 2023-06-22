@@ -2,6 +2,7 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => ({
   root: {
+    color: theme.palette.custom.fonts.fontTwo,
     display: 'grid',
     gap: theme.spacing(1),
     gridTemplateRows: 'auto',
@@ -15,7 +16,6 @@ const useStyles = makeStyles()((theme) => ({
   },
   block: {
     background: theme.palette.custom.block.background,
-    borderRadius: theme.shape.borderRadius + 10,
   },
   blockHeight: {
     background: theme.palette.custom.primaryData.one,

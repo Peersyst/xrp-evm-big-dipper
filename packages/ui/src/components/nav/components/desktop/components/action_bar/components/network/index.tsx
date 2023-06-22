@@ -22,7 +22,7 @@ const Network: FC<NetworkProps> = ({ className, toggleNetwork }) => {
       tabIndex={0}
       aria-label={selectedName}
     >
-      <ChainIcon type="icon" className={classes.icon} alt="icon" />
+      <ChainIcon type="icon" chainName="xrplIcon" className={classes.icon} alt="icon" />
       <Typography variant="body1">{selectedName}</Typography>
       <ExpandMoreIcon />
     </div>

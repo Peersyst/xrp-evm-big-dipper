@@ -67,6 +67,9 @@ const useStyles = makeStyles()((theme) => {
       overflowX: 'hidden',
       width: CLOSED_DRAWER_WIDTH,
     },
+    logoBlack: {
+      color: '#000000',
+    },
   };
 });
 

@@ -12,10 +12,11 @@ const useStyles = makeStyles()((theme) => ({
     justifyContent: 'center',
     color: theme.palette.custom.fonts.fontFive,
     '& .MuiTypography-h1': {
+      color: theme.palette.custom.fonts.fontOne,
       fontWeight: 600,
     },
     '& .label': {
-      color: '#a2a2a4',
+      color: theme.palette.custom.fonts.fontTwo,
       fontSize: '1rem',
     },
     '& .content': {

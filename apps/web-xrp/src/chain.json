@@ -141,12 +141,12 @@
       },
       "custom": {
         "block": {
-          "background": "#232325"
+          "background": "#E0E0E1"
         },
         "blockCard": {
           "border": 5,
           "borderColor": "#B480FF",
-          "background": "#232325"
+          "background": "#E0E0E1"
         },
         "link": {
           "color": "#B480FF"
@@ -163,7 +163,7 @@
           "fontThree": "#777777",
           "fontFour": "#999999",
           "fontFive": "#FFFFFF",
-          "highlight": "#4092CD"
+          "highlight": "#B480FF"
         },
         "primaryData": {
           "one": "#F87255",
