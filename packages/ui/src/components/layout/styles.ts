@@ -14,9 +14,11 @@ const useStyles = makeStyles()((theme) => ({
     backgroundRepeat: 'no-repeat',
   },
   contentWrapper: {
+    zIndex: 1,
     [theme.breakpoints.up('lg')]: {
       display: 'flex',
       flex: 1,
+      position: 'relative',
     },
   },
   footer: {

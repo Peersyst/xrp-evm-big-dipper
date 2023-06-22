@@ -21,7 +21,11 @@ const TitleBar: FC<TitleBarProps> = ({ className, title }) => {
 
   return (
     <div className={cx(classes.root, className)}>
-      {!title && <ChainIcon type="logo" className={classes.logo} alt="logo" />}
+      {!title && (
+        <div className={classes.logoContainer}>
+          <ChainIcon type="logo" chainName="xrpl" className={classes.logo} alt="logo" />
+        </div>
+      )}
       {!!title && <Typography variant="h1">{title}</Typography>}
       <div className={classes.content}>
         {market.map((x) => (
