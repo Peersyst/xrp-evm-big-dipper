@@ -26,6 +26,13 @@ const useStyles = makeStyles()((theme) => ({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  seeMoreButton: {
+    color: theme.palette.primary.main,
+    padding: theme.spacing(1, 2),
+    border: `2px solid ${theme.palette.primary.main}`,
+    borderRadius: theme.shape.borderRadius,
+    fontWeight: 600,
+  },
 }));
 
 export default useStyles;

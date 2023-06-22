@@ -33,7 +33,7 @@ const useStyles = makeStyles()((theme) => ({
     color: theme.palette.primary.main,
     padding: theme.spacing(1, 2),
     border: `2px solid ${theme.palette.primary.main}`,
-    borderRadius: theme.shape.borderRadius + 8,
+    borderRadius: theme.shape.borderRadius,
     fontWeight: 600,
   },
 }));

@@ -25,6 +25,9 @@ declare module '@mui/material/styles/createPalette' {
       border: string;
       borderColor: string;
     };
+    link: {
+      color: string;
+    };
     general: {
       background: string;
       surfaceOne: string;

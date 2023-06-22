@@ -9,7 +9,7 @@ type BlockCardProps = {
   item: ItemType;
 };
 
-const BlockCard = ({ item }: ComponentDefault & BlockCardProps) => {
+const XrpBlockCard = ({ item }: ComponentDefault & BlockCardProps) => {
   const { classes } = useStyles();
   const { t } = useAppTranslation('transactions');
 
@@ -36,4 +36,4 @@ const BlockCard = ({ item }: ComponentDefault & BlockCardProps) => {
   );
 };
 
-export default BlockCard;
+export default XrpBlockCard;

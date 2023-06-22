@@ -6,17 +6,14 @@ import { columns } from '@/screens/home/components/blocks/components/desktop/uti
 import type { ItemType } from '@/screens/home/components/blocks/types';
 import { getMiddleEllipsis } from '@/utils/get_middle_ellipsis';
 import { BLOCK_DETAILS } from '@/utils/go_to_page';
-import Table from '@mui/material/Table';
-import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
-import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import useAppTranslation from '@/hooks/useAppTranslation';
 import Link from 'next/link';
 import numeral from 'numeral';
 import { FC } from 'react';
-import BlockCard from '@/xrp-components/components/block-card';
+import XrpBlockCard from '@/xrp/components/xrp-block-card';
 
 type BlockRowProps = {
   item: ItemType;
@@ -102,7 +99,7 @@ const Desktop: FC<DesktopProps> = ({ className, items }) => {
     <div className={cx(classes.root, className)}>
       <AnimatePresence initial={false}>
         {items.map((row) => (
-          <BlockCard key={row.hash} item={row} />
+          <XrpBlockCard key={row.hash} item={row} />
         ))}
       </AnimatePresence>
     </div>

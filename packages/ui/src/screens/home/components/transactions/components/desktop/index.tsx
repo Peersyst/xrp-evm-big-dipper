@@ -46,12 +46,12 @@ const Desktop: FC<DesktopProps> = ({ className, items }) => {
   const formattedData = items.map((x, i) => ({
     key: `${x.hash}-${i}`,
     block: (
-      <Link shallow prefetch={false} href={BLOCK_DETAILS(x.height)}>
+      <Link shallow prefetch={false} href={BLOCK_DETAILS(x.height)} className={classes.link}>
         {numeral(x.height).format('0,0')}
       </Link>
     ),
     hash: (
-      <Link shallow prefetch={false} href={TRANSACTION_DETAILS(x.hash)}>
+      <Link shallow prefetch={false} href={TRANSACTION_DETAILS(x.hash)} className={classes.link}>
         {getMiddleEllipsis(x.hash, {
           beginning: 4,
           ending: 4,
@@ -89,7 +89,7 @@ const Desktop: FC<DesktopProps> = ({ className, items }) => {
           <AnimatePresence initial={false}>
             {formattedData.map((row) => (
               // eslint-disable-next-line react/no-array-index-key
-              <TableRow key={row.key}>
+              <TableRow key={row.key} className={classes.row}>
                 {columns.map((column) => {
                   const { key, align } = column;
                   const item = row[key as keyof typeof row];

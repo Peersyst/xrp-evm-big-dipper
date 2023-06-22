@@ -37,6 +37,14 @@
           "borderColor": "#B480FF",
           "background": "#232325"
         },
+        "transactionCard": {
+          "border": 5,
+          "borderColor": "#B480FF",
+          "background": "#232325"
+        },
+        "link": {
+          "color": "#B480FF"
+        },
         "general": {
           "background": "#000000",
           "surfaceOne": "#131316",
@@ -139,6 +147,9 @@
           "border": 5,
           "borderColor": "#B480FF",
           "background": "#232325"
+        },
+        "link": {
+          "color": "#B480FF"
         },
         "general": {
           "background": "#F8F8F8",

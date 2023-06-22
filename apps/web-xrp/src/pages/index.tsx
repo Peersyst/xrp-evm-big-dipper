@@ -1,5 +1,5 @@
 import withGetStaticProps from '@/pages/withGetStaticProps';
-import Home from '@/xrp-components/screens/home';
+import Home from '@/xrp/screens/home';
 import type { NextPage } from 'next';
 import nextI18NextConfig from '../../next-i18next.config';
 
