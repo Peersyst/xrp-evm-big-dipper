@@ -2,13 +2,14 @@ import { NextSeo } from 'next-seo';
 import useAppTranslation from '@/hooks/useAppTranslation';
 import { useRecoilValue } from 'recoil';
 import Box from '@/components/box';
-import Layout from '@/components/layout';
+
 import LoadAndExist from '@/components/load_and_exist';
 import TransactionsList from '@/components/transactions_list';
 import TransactionsListDetails from '@/components/transactions_list_details';
 import { readTx } from '@/recoil/settings';
 import { useTransactions } from '@/screens/transactions/hooks';
 import useStyles from '@/screens/transactions/styles';
+import Layout from '@/xrp/components/layout';
 
 const Transactions = () => {
   const txListFormat = useRecoilValue(readTx);

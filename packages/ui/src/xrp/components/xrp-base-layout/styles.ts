@@ -11,10 +11,10 @@ const useStyles = makeStyles()((theme) => ({
     display: 'absolute',
     bottom: 0,
     right: 0,
+    zIndex: -1,
   },
   root: {
-    height: '100vh',
-    display: 'absolute',
+    zIndex: -1,
   },
 }));
 

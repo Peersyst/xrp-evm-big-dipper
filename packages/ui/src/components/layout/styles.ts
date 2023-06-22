@@ -46,6 +46,20 @@ const useStyles = makeStyles()((theme) => ({
     margin: '0 auto',
     width: '100%',
   },
+  topImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: -1,
+    aspectRatio: '1',
+  },
+  bottomImage: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    zIndex: -1,
+    aspectRatio: '1/2',
+  },
 }));
 
 export default useStyles;

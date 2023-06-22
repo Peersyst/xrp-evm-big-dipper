@@ -3,6 +3,7 @@ import Banner, { getBannersLinks } from '@/components/banner';
 import useStyles from '@/components/layout/styles';
 import type { LayoutProps } from '@/components/layout/types';
 import Nav from '@/components/nav';
+import ChainIcon from '@/components/ChainIcon';
 
 const bannerLinks = getBannersLinks();
 
@@ -35,7 +36,11 @@ const Layout = (props: LayoutProps) => {
           <div className={classes.appBarPlaceholder} />
           {!!bannerLinks.length && <Banner />}
           <div className={classes.pageLayout}>
-            <div className={cx(className, 'main-content')}>{children}</div>
+            <div className={cx(className, 'main-content')}>
+              <ChainIcon type="logo" chainName="backgroundTop" className={classes.topImage} />
+              <ChainIcon type="logo" chainName="backgroundBottom" className={classes.bottomImage} />
+              {children}
+            </div>
           </div>
         </div>
       </div>
