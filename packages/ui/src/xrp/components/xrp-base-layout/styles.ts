@@ -14,7 +14,7 @@ const useStyles = makeStyles()((theme) => ({
   },
   root: {
     height: '100vh',
-    display: 'flex',
+    display: 'absolute',
   },
 }));
 
