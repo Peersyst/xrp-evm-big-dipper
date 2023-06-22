@@ -1,12 +1,14 @@
+import ChainIcon from '@/components/ChainIcon';
 import useStyles from './styles';
+import Image from 'next/image';
 
 const XrpBaseLayout = () => {
   const { classes } = useStyles();
 
   return (
     <div className={classes.root}>
-      <img src="/images/bg_top.png" alt="bg-top" className={classes.topImage} />
-      <img src="/images/bg_bottom.png" alt="bg-top" className={classes.bottomImage} />
+      <ChainIcon type="logo" chainName="backgroundTop" className={classes.bgTop} />
+      <ChainIcon type="logo" chainName="backgroundBottom" className={classes.bgBottom} />
     </div>
   );
 };

@@ -6,14 +6,16 @@ import { columns } from '@/screens/home/components/blocks/components/desktop/uti
 import type { ItemType } from '@/screens/home/components/blocks/types';
 import { getMiddleEllipsis } from '@/utils/get_middle_ellipsis';
 import { BLOCK_DETAILS } from '@/utils/go_to_page';
+import Table from '@mui/material/Table';
+import TableBody from '@mui/material/TableBody';
 import TableCell from '@mui/material/TableCell';
+import TableHead from '@mui/material/TableHead';
 import TableRow from '@mui/material/TableRow';
 import { AnimatePresence, motion, Variants } from 'framer-motion';
 import useAppTranslation from '@/hooks/useAppTranslation';
 import Link from 'next/link';
 import numeral from 'numeral';
 import { FC } from 'react';
-import XrpBlockCard from '@/xrp/components/xrp-block-card';
 
 type BlockRowProps = {
   item: ItemType;
@@ -48,10 +50,11 @@ const variants: Variants = {
 
 const BlockRow: FC<BlockRowProps> = ({ item }) => {
   const { name, address, imageUrl } = useProfileRecoil(item.proposer);
+  const { classes } = useStyles();
 
   const formattedData = {
     height: (
-      <Link shallow prefetch={false} href={BLOCK_DETAILS(item.height)} className="value">
+      <Link shallow prefetch={false} href={BLOCK_DETAILS(item.height)}>
         {numeral(item.height).format('0,0')}
       </Link>
     ),
@@ -64,7 +67,7 @@ const BlockRow: FC<BlockRowProps> = ({ item }) => {
     }),
   };
   return (
-    <TableRow>
+    <TableRow className={classes.card}>
       {columns.map((column) => {
         const { key, align } = column;
         return (
@@ -97,11 +100,24 @@ const Desktop: FC<DesktopProps> = ({ className, items }) => {
 
   return (
     <div className={cx(classes.root, className)}>
-      <AnimatePresence initial={false}>
-        {items.map((row) => (
-          <XrpBlockCard key={row.hash} item={row} />
-        ))}
-      </AnimatePresence>
+      <Table className={classes.table}>
+        <TableHead>
+          <TableRow>
+            {columns.map((column) => (
+              <TableCell key={column.key} align={column.align}>
+                {t(column.key)}
+              </TableCell>
+            ))}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          <AnimatePresence initial={false}>
+            {items.map((row) => (
+              <BlockRow key={row.hash} item={row} />
+            ))}
+          </AnimatePresence>
+        </TableBody>
+      </Table>
     </div>
   );
 };

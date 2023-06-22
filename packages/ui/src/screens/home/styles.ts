@@ -2,6 +2,10 @@ import { CSSObject } from '@emotion/react';
 import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => ({
+  main: {
+    positojn: 'relative',
+    zIndex: 0,
+  },
   root: {
     ...(theme.mixins.layout as CSSObject),
     display: 'grid',

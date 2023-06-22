@@ -21,7 +21,7 @@
       },
       "background": {
         "default": "#111112",
-        "paper": "#131316"
+        "paper": "#232325"
       },
       "divider": "#282828",
       "text": {
@@ -46,8 +46,8 @@
           "color": "#B480FF"
         },
         "general": {
-          "background": "#000000",
-          "surfaceOne": "#131316",
+          "background": "#111112",
+          "surfaceOne": "#232325",
           "surfaceTwo": "#212123",
           "icon": "#999999"
         },
@@ -57,7 +57,7 @@
           "fontThree": "#818181",
           "fontFour": "#999999",
           "fontFive": "#FFFFFF",
-          "highlight": "#4092CD"
+          "highlight": "#B480FF"
         },
         "primaryData": {
           "one": "#F87255",

@@ -31,7 +31,7 @@ const AvatarName: FC<AvatarName & JSX.IntrinsicElements['div']> = ({
       <Link shallow href={href(address)} target={target}>
         <span className={cx(classes.root, className)} {...props}>
           <Avatar className={classes.avatar} address={address} imageUrl={imageUrl ?? undefined} />
-          <MiddleEllipsis className={classes.text} content={name} />
+          <MiddleEllipsis className={cx(classes.text, classes.link)} content={name} />
         </span>
       </Link>
     </Tooltip>

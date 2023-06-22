@@ -46,6 +46,16 @@ const useStyles = makeStyles()((theme) => ({
     margin: '0 auto',
     width: '100%',
   },
+  bgTop: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+  },
+  bgBottom: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+  },
 }));
 
 export default useStyles;

@@ -46,6 +46,8 @@ import akashLogoDark from 'shared-utils/assets/logos/akash-dark.svg?url';
 import assetmantleLogoDark from 'shared-utils/assets/logos/assetmantle-dark.svg?url';
 import bandLogoDark from 'shared-utils/assets/logos/band-dark.svg?url';
 import baseLogoLight from 'shared-utils/assets/logos/base-light.svg?url';
+import bgTop from 'shared-utils/assets/images/bg-top.png?url';
+import bgBottom from 'shared-utils/assets/images/bg-bottom.png?url';
 import bitsongLogoDark from 'shared-utils/assets/logos/bitsong-dark.svg?url';
 import comdexLogoDark from 'shared-utils/assets/logos/comdex-dark.svg?url';
 import cosmosLogoDark from 'shared-utils/assets/logos/cosmos-dark.svg?url';
@@ -274,6 +276,12 @@ const ChainIcon = ({
     case 'gitopia':
       [iconDark, iconLight] =
         type === 'icon' ? [gitopiaIconDark, gitopiaIconDark] : [gitopiaLogoDark, gitopiaLogoLight];
+      break;
+    case 'backgroundTop':
+      [iconDark, iconLight] = [bgTop, bgTop];
+      break;
+    case 'backgroundBottom':
+      [iconDark, iconLight] = [bgBottom, bgBottom];
       break;
     default:
       throw new Error(`chain ${chainName} not supported`);

@@ -28,6 +28,9 @@ const useStyles = makeStyles()((theme) => ({
   tooltip: {
     maxWidth: 'none',
   },
+  link: {
+    color: theme.palette.custom.link,
+  },
 }));
 
 export default useStyles;

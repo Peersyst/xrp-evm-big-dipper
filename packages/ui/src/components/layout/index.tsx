@@ -3,6 +3,7 @@ import Banner, { getBannersLinks } from '@/components/banner';
 import useStyles from '@/components/layout/styles';
 import type { LayoutProps } from '@/components/layout/types';
 import Nav from '@/components/nav';
+import Image from 'next/image';
 
 const bannerLinks = getBannersLinks();
 

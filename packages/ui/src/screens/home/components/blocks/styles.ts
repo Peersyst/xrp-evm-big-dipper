@@ -2,7 +2,7 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => ({
   root: {
-    background: '#232325',
+    backgroundColor: '#232325',
     display: 'flex',
     flexDirection: 'column',
     '& .button': {
