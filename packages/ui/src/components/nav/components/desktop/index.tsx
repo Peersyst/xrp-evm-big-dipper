@@ -11,6 +11,7 @@ import MenuItems from '@/components/nav/components/menu_items';
 import useStyles from '@/components/nav/components/desktop/styles';
 import { useDesktop } from '@/components/nav/components/desktop/hooks';
 import ActionBar from '@/components/nav/components/desktop/components/action_bar';
+import ChainIcon from '@/components/ChainIcon';
 
 type DesktopProps = {
   className?: string;
@@ -51,16 +52,20 @@ const Desktop: FC<DesktopProps> = ({ className, title }) => {
           }}
         >
           {theme === 'light' ? (
-            <BigDipperLogoRed
+            <ChainIcon
               className={cx(classes.logo, classes.logoBlack)}
               onClick={toggleMenu}
+              type="icon"
+              chainName="xrpl"
               role="button"
               aria-label="toggle menu"
             />
           ) : (
-            <BigDipperLogoWhite
-              className={classes.logo}
+            <ChainIcon
+              className={cx(classes.logo, classes.logoBlack)}
               onClick={toggleMenu}
+              type="icon"
+              chainName="xrpl"
               role="button"
               aria-label="toggle menu"
             />

@@ -28,12 +28,13 @@ const useStyles = makeStyles()((theme) => ({
     height: '60px',
     minHeight: '60px',
     minWidth: '60px',
+    marginRight: '20px',
   },
   header: {
     display: 'flex',
     alignItems: 'center',
     '& .header__content': {
-      marginLeft: theme.spacing(1),
+      marginLeft: theme.spacing(2),
     },
     '& .MuiTypography-h2': {
       marginBottom: theme.spacing(1),
@@ -42,7 +43,7 @@ const useStyles = makeStyles()((theme) => ({
       '& .header__content': {
         display: 'flex',
         alignItems: 'center',
-        justifyContent: 'flex-start',
+        justifyContent: 'center',
         marginLeft: 0,
         '& .MuiTypography-h2': {
           marginRight: theme.spacing(2),

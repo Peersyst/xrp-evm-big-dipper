@@ -60,7 +60,7 @@ const Tokenomics: FC<ComponentDefault> = ({ className }) => {
   return (
     <Box className={cx(classes.root, className)}>
       <Typography variant="h2" className={classes.label}>
-        {t('tokenomics')}
+        {t('votingPower')}
       </Typography>
       <div className={classes.data}>
         {data.slice(0, 2).map((x) => (

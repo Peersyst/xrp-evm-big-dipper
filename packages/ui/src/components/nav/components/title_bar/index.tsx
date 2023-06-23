@@ -13,7 +13,6 @@ type TitleBarProps = {
 };
 
 const TitleBar: FC<TitleBarProps> = ({ className, title }) => {
-  const { t } = useAppTranslation('common');
   const { classes, cx } = useStyles();
   const marketState = useRecoilValue(readMarket);
 
@@ -27,7 +26,7 @@ const TitleBar: FC<TitleBarProps> = ({ className, title }) => {
         </div>
       )}
       {!!title && <Typography variant="h1">{title}</Typography>}
-      <div className={classes.content}>
+      {/* <div className={classes.content}>
         {market.map((x) => (
           <div key={x.key} className={classes.item}>
             <Typography variant="body1" className="label">
@@ -36,7 +35,7 @@ const TitleBar: FC<TitleBarProps> = ({ className, title }) => {
             <Typography variant="body1">{x.data}</Typography>
           </div>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

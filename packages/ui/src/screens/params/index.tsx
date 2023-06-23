@@ -64,7 +64,7 @@ const Params = () => {
       <Layout navTitle={t('params') ?? undefined}>
         <LoadAndExist loading={state.loading} exists={state.exists}>
           <span className={classes.root}>
-            {staking && <BoxDetails {...staking} />}
+            {/* {staking && <BoxDetails {...staking} />} */}
             {slashing && <BoxDetails {...slashing} />}
             {minting && <BoxDetails {...minting} />}
             {distribution && <BoxDetails {...distribution} />}
