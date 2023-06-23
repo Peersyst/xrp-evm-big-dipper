@@ -22,21 +22,12 @@ const ActionBar: FC<ActionBarProps> = ({ toggleNetwork, className, isNetwork }) 
     <div className={cx(classes.root, className)} ref={heightRef}>
       <div className={classes.actions}>
         <SearchBar className={cx(classes.searchBar, { open: isNetwork })} />
-        <Network
-          className={cx(classes.network, { open: isNetwork })}
-          toggleNetwork={toggleNetwork}
-        />
+
         {/* <WalletDetails /> */}
         <ThemeToggle className={classes.toggle} />
         <SettingsList />
         {/* <ConnectWallet /> */}
       </div>
-      <NetworkList
-        actionHeight={height}
-        className={cx(classes.networkList, {
-          open: isNetwork,
-        })}
-      />
     </div>
   );
 };

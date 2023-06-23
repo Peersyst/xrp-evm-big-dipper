@@ -6,12 +6,14 @@ import Hero from '@/screens/home/components/hero';
 import Tokenomics from '@/screens/home/components/tokenomics';
 import Transactions from '@/screens/home/components/transactions';
 import useStyles from '@/screens/home/styles';
+import useAppTranslation from '@/hooks/useAppTranslation';
 
 const Home = () => {
+  const { t } = useAppTranslation('transactions');
   const { classes } = useStyles();
 
   return (
-    <Layout className={classes.root}>
+    <Layout className={classes.root} navTitle={t('overview')}>
       <DataBlocks className={classes.dataBlocks} />
       <Hero className={classes.hero} />
       <Tokenomics className={classes.tokenomics} />

@@ -79,10 +79,12 @@ const useStyles = makeStyles<{ coverUrl?: string }>()((theme, { coverUrl }) => (
       minWidth: '150px',
       top: theme.spacing(-11),
       borderWidth: '5px',
+      marginRight: theme.spacing(2),
     },
   },
   link: {
-    color: theme.palette.custom.fonts.highlight,
+    color: 'red',
+
     '&:hover': {
       cursor: 'pointer',
     },
