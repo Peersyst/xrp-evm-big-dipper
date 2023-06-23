@@ -50,10 +50,11 @@ const variants: Variants = {
 
 const BlockRow: FC<BlockRowProps> = ({ item }) => {
   const { name, address, imageUrl } = useProfileRecoil(item.proposer);
+  const { classes } = useStyles();
 
   const formattedData = {
     height: (
-      <Link shallow prefetch={false} href={BLOCK_DETAILS(item.height)} className="value">
+      <Link shallow prefetch={false} href={BLOCK_DETAILS(item.height)}>
         {numeral(item.height).format('0,0')}
       </Link>
     ),
@@ -66,7 +67,7 @@ const BlockRow: FC<BlockRowProps> = ({ item }) => {
     }),
   };
   return (
-    <TableRow>
+    <TableRow className={classes.card}>
       {columns.map((column) => {
         const { key, align } = column;
         return (

@@ -8,11 +8,17 @@ const useStyles = makeStyles()((theme) => ({
       flexDirection: 'column',
       minHeight: '100vh',
     },
+    backgroundImage: 'url(/images/background.png)',
+    backgroundPosition: 'center',
+    backgroundSize: 'cover',
+    backgroundRepeat: 'no-repeat',
   },
   contentWrapper: {
+    zIndex: 1,
     [theme.breakpoints.up('lg')]: {
       display: 'flex',
       flex: 1,
+      position: 'relative',
     },
   },
   footer: {
@@ -32,6 +38,29 @@ const useStyles = makeStyles()((theme) => ({
       width: '100%',
       flex: 1,
     },
+  },
+  pageLayout: {
+    [theme.breakpoints.up('xl')]: {
+      width: '80%',
+    },
+    display: 'flex',
+    justifyContent: 'center',
+    margin: '0 auto',
+    width: '100%',
+  },
+  topImage: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: -1,
+    aspectRatio: '1',
+  },
+  bottomImage: {
+    position: 'absolute',
+    bottom: 0,
+    right: 0,
+    zIndex: -1,
+    aspectRatio: '1/2',
   },
 }));
 

@@ -15,6 +15,9 @@ const useStyles = makeStyles()((theme) => ({
       },
     },
   },
+  card: {
+    borderLeft: `${theme.palette.custom.blockCard.border}px solid ${theme.palette.primary.main}`,
+  },
 }));
 
 export default useStyles;

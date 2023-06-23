@@ -52,7 +52,7 @@ const Desktop: FC<DesktopProps> = ({ className, title }) => {
         >
           {theme === 'light' ? (
             <BigDipperLogoRed
-              className={classes.logo}
+              className={cx(classes.logo, classes.logoBlack)}
               onClick={toggleMenu}
               role="button"
               aria-label="toggle menu"

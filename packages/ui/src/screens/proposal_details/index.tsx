@@ -1,6 +1,6 @@
 import { NextSeo } from 'next-seo';
 import useAppTranslation from '@/hooks/useAppTranslation';
-import Layout from '@/components/layout';
+
 import LoadAndExist from '@/components/load_and_exist';
 import Deposits from '@/screens/proposal_details/components/deposits';
 import Overview from '@/screens/proposal_details/components/overview';
@@ -9,6 +9,7 @@ import VotesGraph from '@/screens/proposal_details/components/votes_graph';
 import { useProposalDetails } from '@/screens/proposal_details/hooks';
 import useStyles from '@/screens/proposal_details/styles';
 import { shouldShowData } from '@/screens/proposal_details/utils';
+import Layout from '@/xrp/components/layout';
 
 const ProposalDetails = () => {
   const { t } = useAppTranslation('proposals');

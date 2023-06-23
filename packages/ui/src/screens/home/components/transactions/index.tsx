@@ -23,7 +23,12 @@ const Transactions: FC<ComponentDefault> = ({ className }) => {
     <Box className={cx(classes.root, className)}>
       <div className={classes.label}>
         <Typography variant="h2">{t('latestTransactions')}</Typography>
-        <Link shallow href={TRANSACTIONS} className="button" aria-label="see more txs">
+        <Link
+          shallow
+          href={TRANSACTIONS}
+          className={cx('button', classes.seeMoreButton)}
+          aria-label="see more txs"
+        >
           {t('seeMore')}
         </Link>
       </div>
@@ -34,7 +39,12 @@ const Transactions: FC<ComponentDefault> = ({ className }) => {
           <Divider className={display.hiddenWhenLg} />
           <Link
             href={TRANSACTIONS}
-            className={cx(classes.seeMoreFooter, display.hiddenWhenLg, 'button')}
+            className={cx(
+              classes.seeMoreFooter,
+              display.hiddenWhenLg,
+              classes.seeMoreButton,
+              'button'
+            )}
             aria-label="see more txs"
           >
             {t('seeMore')}
