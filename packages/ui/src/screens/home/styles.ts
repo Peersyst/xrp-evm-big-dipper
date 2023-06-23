@@ -18,6 +18,7 @@ const useStyles = makeStyles()((theme) => ({
       gap: theme.spacing(2),
       gridTemplateColumns: 'repeat(4, 1fr)',
     },
+    zIndex: 1,
   },
   dataBlocks: {
     [theme.breakpoints.up('md')]: {

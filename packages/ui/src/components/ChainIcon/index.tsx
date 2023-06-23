@@ -46,6 +46,12 @@ import akashLogoDark from 'shared-utils/assets/logos/akash-dark.svg?url';
 import assetmantleLogoDark from 'shared-utils/assets/logos/assetmantle-dark.svg?url';
 import bandLogoDark from 'shared-utils/assets/logos/band-dark.svg?url';
 import baseLogoLight from 'shared-utils/assets/logos/base-light.svg?url';
+import bgTop from 'shared-utils/assets/images/bg-top.png?url';
+import bgBottom from 'shared-utils/assets/images/bg-bottom.png?url';
+import xrplLogo from 'shared-utils/assets/images/xrpl_logo.svg?url';
+import xrplLogoDark from 'shared-utils/assets/images/xrpl_logo_dark.svg?url';
+import xrplIcon from 'shared-utils/assets/images/xrpl_icon.svg?url';
+import xrplIconDark from 'shared-utils/assets/images/xrpl_icon_dark.svg?url';
 import bitsongLogoDark from 'shared-utils/assets/logos/bitsong-dark.svg?url';
 import comdexLogoDark from 'shared-utils/assets/logos/comdex-dark.svg?url';
 import cosmosLogoDark from 'shared-utils/assets/logos/cosmos-dark.svg?url';
@@ -274,6 +280,18 @@ const ChainIcon = ({
     case 'gitopia':
       [iconDark, iconLight] =
         type === 'icon' ? [gitopiaIconDark, gitopiaIconDark] : [gitopiaLogoDark, gitopiaLogoLight];
+      break;
+    case 'backgroundTop':
+      [iconDark, iconLight] = [bgTop, bgTop];
+      break;
+    case 'backgroundBottom':
+      [iconDark, iconLight] = [bgBottom, bgBottom];
+      break;
+    case 'xrpl':
+      [iconDark, iconLight] = [xrplLogo, xrplLogoDark];
+      break;
+    case 'xrplIcon':
+      [iconDark, iconLight] = [xrplIcon, xrplIconDark];
       break;
     default:
       throw new Error(`chain ${chainName} not supported`);

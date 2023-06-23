@@ -17,6 +17,17 @@ declare module '@mui/material/styles' {
 
 declare module '@mui/material/styles/createPalette' {
   interface Custom {
+    block: {
+      background: string;
+    };
+    blockCard: {
+      background: string;
+      border: string;
+      borderColor: string;
+    };
+    link: {
+      color: string;
+    };
     general: {
       background: string;
       surfaceOne: string;

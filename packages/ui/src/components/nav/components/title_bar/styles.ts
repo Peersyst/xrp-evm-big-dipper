@@ -2,13 +2,15 @@ import { makeStyles } from 'tss-react/mui';
 
 const useStyles = makeStyles()((theme) => ({
   root: {
+    position: 'relative',
+    zIndex: 2,
     padding: theme.spacing(1, 2),
     display: 'flex',
     justifyContent: 'center',
     flexDirection: 'column',
     alignItems: 'flex-start',
     [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(1, 3),
+      padding: theme.spacing(0, 3),
       display: 'flex',
       alignItems: 'center',
       justifyContent: 'space-between',
@@ -70,6 +72,13 @@ const useStyles = makeStyles()((theme) => ({
     [theme.breakpoints.up('lg')]: {
       padding: 0,
       width: 'auto',
+    },
+  },
+  logoContainer: {
+    [theme.breakpoints.down('lg')]: {
+      background: theme.palette.custom.general.surfaceOne,
+      borderRadius: theme.shape.borderRadius,
+      padding: theme.spacing(2, 4),
     },
   },
 }));

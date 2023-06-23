@@ -1,7 +1,7 @@
 import { NextSeo } from 'next-seo';
 import useAppTranslation from '@/hooks/useAppTranslation';
 import BoxDetails from '@/components/box_details';
-import Layout from '@/components/layout';
+import Layout from '@/xrp/components/layout';
 import LoadAndExist from '@/components/load_and_exist';
 import { useParams } from '@/screens/params/hooks';
 import useStyles from '@/screens/params/styles';

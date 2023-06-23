@@ -1,5 +1,5 @@
 import Box from '@/components/box';
-import Layout from '@/components/layout';
+
 import LoadAndExist from '@/components/load_and_exist';
 import NoData from '@/components/no_data';
 import Desktop from '@/screens/blocks/components/desktop';
@@ -10,6 +10,7 @@ import { useDisplayStyles } from '@/styles/useSharedStyles';
 import { NextSeo } from 'next-seo';
 import useAppTranslation from '@/hooks/useAppTranslation';
 import { ReactNode } from 'react';
+import Layout from '@/xrp/components/layout';
 
 const Blocks = () => {
   const { t } = useAppTranslation('blocks');
