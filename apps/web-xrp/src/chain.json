@@ -5,7 +5,7 @@
     "profile": true,
     "graphqlWs": false
   },
-  "previewImage": "https://s3.bigdipper.live/desmos.png",
+  "previewImage": "https://peersyst-development.s3.eu-west-1.amazonaws.com/validators-explorer-preview.png",
   "themes": {
     "default": "light",
     "themeList": [
@@ -252,6 +252,10 @@
         "axrp": {
           "display": "xrp",
           "exponent": 18
+        },
+        "apoa": {
+          "display": "poa",
+          "exponent": 6
         }
       },
       "endpoints": {
